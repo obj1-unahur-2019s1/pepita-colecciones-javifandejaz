@@ -1,0 +1,22 @@
+import pepita.*
+import comidas.*
+import masAves.*
+
+test "pepita puede volar" {
+	pepita.comer(alpiste, 10)
+	assert.equals(true, pepita.puedeVolar(10))
+	assert.equals(false, pepita.puedeVolar(40))
+}
+
+test "pepon puede volar"{
+	pepon.comer(alpiste, 4)
+	assert.equals(true, pepon.puedeVolar(1))
+	assert.equals(false, pepon.puedeVolar(50))
+	
+}
+
+test "pipa puede volar"{
+	assert.equals(true, pipa.puedeVolar(500))
+	assert.equals(true, pipa.puedeVolar(0))
+	
+}
